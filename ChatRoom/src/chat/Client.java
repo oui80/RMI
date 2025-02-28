@@ -1,4 +1,4 @@
-package Chat_server;
+package chat;
 
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
