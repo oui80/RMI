@@ -15,17 +15,17 @@ public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
     }
 
     @Override
-    public String name() {
+    public String name() throws RemoteException {
         return name;
     }
 
     @Override
-    public void connect(IParticipant p) {
+    public void connect(IParticipant p) throws RemoteException {
         participants[count++] = p;
     }
 
     @Override
-    public void leave(IParticipant p) {
+    public void leave(IParticipant p) throws RemoteException  {
         for (int i = 0; i < count; i++) {
             if (participants[i] == p) {
                 for (int j = i; j < count - 1; j++) {
@@ -38,7 +38,7 @@ public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
     }
 
     @Override
-    public String[] who() {
+    public String[] who() throws RemoteException  {
         String[] names = new String[count];
         for (int i = 0; i < count; i++) {
             names[i] = participants[i].name();
@@ -47,7 +47,7 @@ public class ChatRoom extends UnicastRemoteObject implements IChatRoom {
     }
 
     @Override
-    public void send(IParticipant p, String msg) {
+    public void send(IParticipant p, String msg) throws RemoteException  {
         for (int i = 0; i < count; i++) {
             if (participants[i] != p) {
                 participants[i].receive(p.name(), msg);

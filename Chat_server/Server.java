@@ -1,7 +1,6 @@
 package Chat_server;
 
 import java.rmi.registry.Registry;
-import java.rmi.Remote;
 import java.rmi.registry.LocateRegistry;
 
 public class Server {
@@ -11,7 +10,7 @@ public class Server {
         try {
             IChatRoom room = new ChatRoom("chatroom");
             Registry registry = LocateRegistry.createRegistry(9999);
-            registry.rebind("chatroom", (Remote) room);
+            registry.rebind("chatroom", room);
 
         } catch (Exception e) {
             e.printStackTrace();

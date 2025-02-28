@@ -1,14 +1,17 @@
 package Chat_server;
 
-public interface IChatRoom {
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 
-    String name();
+public interface IChatRoom extends Remote {
 
-    void connect(IParticipant p);
+    String name() throws RemoteException ;
 
-    void leave(IParticipant p);
+    void connect(IParticipant p) throws RemoteException ;
 
-    String[] who();
+    void leave(IParticipant p) throws RemoteException ;
 
-    void send(IParticipant p, String msg);
+    String[] who() throws RemoteException ;
+
+    void send(IParticipant p, String msg) throws RemoteException ;
 }
