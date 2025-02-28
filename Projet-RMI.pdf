@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="fr" xml:lang="fr">
+<head>
+    <title>AR | UFRIM²AG : Moodle</title>
+    <link rel="shortcut icon" href="https://im2ag-moodle.univ-grenoble-alpes.fr/theme/image.php/classic/theme/1730709409/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, AR | UFRIM²AG : Moodle" />
+<link rel="stylesheet" type="text/css" href="https://im2ag-moodle.univ-grenoble-alpes.fr/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://im2ag-moodle.univ-grenoble-alpes.fr/theme/styles.php/classic/1730709409_1/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr","apibase":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/r.php\/api","homeurl":{},"sesskey":"57SDtraqYS","sessiontimeout":"10800","sessiontimeoutwarning":1200,"themerev":"1730709409","slasharguments":1,"theme":"classic","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1730709409","admin":"admin","svgicons":true,"usertimezone":"Europe\/Paris","language":"fr","courseId":41,"courseContextId":952,"contextid":295,"contextInstanceId":22,"langrev":1740712517,"templaterev":"1730709409","siteId":1,"userId":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/theme\/yui_combo.php?m\/1730709409\/","combine":true,"comboBase":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/theme\/yui_combo.php?","ext":false,"root":"m\/1730709409\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1730709409\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/lib\/javascript.php\/1730709409\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/im2ag-moodle.univ-grenoble-alpes.fr\/lib\/javascript.php\/1730709409\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26765928-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-enrol-index" class="format-topics limitedwidth  path-enrol dir-ltr lang-fr yui-skin-sam yui3-skin-sam im2ag-moodle-univ-grenoble-alpes-fr pagelayout-incourse course-41 context-295 category-22 theme ">
+
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Passer au contenu principal</a>
+</div><script src="https://im2ag-moodle.univ-grenoble-alpes.fr/lib/javascript.php/1730709409/lib/polyfills/polyfill.js"></script>
+<script src="https://im2ag-moodle.univ-grenoble-alpes.fr/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://im2ag-moodle.univ-grenoble-alpes.fr/lib/javascript.php/1730709409/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-bootswatch navbar-expand moodle-has-zindex">
+        <div class="container-fluid">
+            <a href="https://im2ag-moodle.univ-grenoble-alpes.fr/" class="navbar-brand d-flex align-items-center m-1 p-0 aabtn">
+                    <span class="sitename">UFRIM²AG : Moodle</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                <li class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-67c16b605969467c16b604fd6947" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" title="Langue" aria-controls="drop-down-menu-67c16b605969467c16b604fd6947">
+        Français ‎(fr)‎
+    </a>
+    <div class="dropdown-menu" role="menu" id="drop-down-menu-67c16b605969467c16b604fd6947" aria-labelledby="drop-down-67c16b605969467c16b604fd6947">
+                <a class="dropdown-item" role="menuitem" href="https://im2ag-moodle.univ-grenoble-alpes.fr/enrol/index.php?id=41&amp;lang=en"  lang="en" >English ‎(en)‎</a>
+                <a class="dropdown-item" role="menuitem" href="https://im2ag-moodle.univ-grenoble-alpes.fr/enrol/index.php?id=41&amp;lang=fr"  >Français ‎(fr)‎</a>
+    </div>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <div id="usernavigation" class="navbar-nav my-1 ms-auto">
+                <div class="divider border-start h-50 align-self-center mx-1"></div>
+                
+                
+                <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                    <div class="usermenu"><span class="login nav-link">Vous êtes connecté anonymement (<a href="https://im2ag-moodle.univ-grenoble-alpes.fr/login/index.php">Connexion</a>)</span></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="me-auto">
+                    <div class="page-context-header d-flex align-items-center mb-2">
+    <div class="page-header-headings">
+        <h1 class="h2 mb-0">Applications Réparties</h1>
+    </div>
+</div>
+                    </div>
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav aria-label="Barre de navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://im2ag-moodle.univ-grenoble-alpes.fr/"
+                        
+                        
+                        
+                    >
+                        Accueil
+                    </a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <span >
+                        Options d’inscription
+                    </span>
+                </li>
+        </ol>
+</nav>
+                    </div>
+                    <div class="ms-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row  blocks-pre   d-print-block">
+            <div id="region-main-box" class="region-main">
+                <section id="region-main" class="region-main-content" aria-label="Contenu">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Options d’inscription</h2><div class="box py-3 generalbox info"><div class="coursebox clearfix" data-courseid="41" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=41">Applications Réparties</a></h3><div class="moreinfo"></div></div><div class="content"><div class="d-flex"><div class="flex-grow-1"><div class="summary"><div class="no-overflow"><p>Écrire un paragraphe concis et précis qui expose le contenu du cours</p></div></div><ul class="teachers"><li><span class="font-weight-bold">Enseignant responsable de cours: </span><a href="https://im2ag-moodle.univ-grenoble-alpes.fr/user/profile.php?id=843">Fabienne Boyer</a></li><li><span class="font-weight-bold">Enseignant: </span><a href="https://im2ag-moodle.univ-grenoble-alpes.fr/user/profile.php?id=4082">Olivier Gruber</a></li></ul></div></div></div></div></div><div class="box py-3 generalbox">
+<form autocomplete="off" action="https://im2ag-moodle.univ-grenoble-alpes.fr/login/index.php" method="post" accept-charset="utf-8" id="mform1_65ZlT6fllY3HJd0" class="mform">
+	<div style="display: none;"><input name="sesskey" type="hidden" value="57SDtraqYS" />
+<input name="_qf__enrol_self_empty_form" type="hidden" value="1" />
+<input name="mform_isexpanded_id_selfheader" type="hidden" value="1" />
+</div>
+
+
+	<fieldset class="clearfix collapsible"  id="id_selfheader"><legend class="sr-only">Auto-inscription (Étudiant)</legend>
+<div class="d-flex align-items-center mb-2">
+    <div class="position-relative d-flex ftoggler align-items-center position-relative me-1">
+            <a data-toggle="collapse"
+               href="#id_selfheadercontainer"
+               role="button"
+               aria-expanded="true"
+               aria-controls="id_selfheadercontainer"
+               class="btn btn-icon me-1 icons-collapse-expand stretched-link fheader "
+            >
+                <span class="expanded-icon icon-no-margin p-2" title="Replier">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true"  ></i>
+                </span>
+                <span class="collapsed-icon icon-no-margin p-2" title="Déplier">
+                    <span class="dir-rtl-hide"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
+                    <span class="dir-ltr-hide"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
+                </span>
+                <span class="sr-only">Auto-inscription (Étudiant)</span>
+            </a>
+        <h3 class="d-flex align-self-stretch align-items-center mb-0" aria-hidden="true">
+            Auto-inscription (Étudiant)
+        </h3>
+    </div>
+    
+</div>
+<div id="id_selfheadercontainer" class="fcontainer collapseable collapse  show"><div id="fitem_id_info" class="mb-3 row  fitem femptylabel   " >
+    <div class="col-md-3 col-form-label d-flex pb-0 pe-md-0">
+        
+        <div class="form-label-addon d-flex align-items-center align-self-start">
+            
+        </div>
+    </div>
+    <div class="col-md-9 d-flex flex-wrap align-items-start felement" data-fieldtype="static">
+        <div class="form-control-static " data-name="info">
+        Les visiteurs anonymes ne peuvent pas accéder à ce cours. Veuillez vous connecter.<div class="continuebutton">
+    <form method="get" action="https://im2ag-moodle.univ-grenoble-alpes.fr/login/index.php" >
+        <button type="submit" class="btn btn-primary"
+            id="single_button67c16b604fd691"
+            
+            
+            >Continuer</button>
+    </form>
+</div>
+        </div>
+        <div class="form-control-feedback invalid-feedback" id="id_error_info" >
+            
+        </div>
+    </div>
+</div>
+		</div></fieldset>
+</form></div></div>
+                    
+                    
+                </section>
+            </div>
+            <div class="columnleft blockcolumn  has-blocks ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocs">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><h2 class="sr-only">Blocs</h2><a href="#sb-2" class="sr-only sr-only-focusable">Passer Navigation</a>
+
+<section id="inst1952"
+     class=" block_navigation block  card mb-3"
+     role="navigation"
+     data-block="navigation"
+     data-instance-id="1952"
+          aria-labelledby="instance-1952-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h3 id="instance-1952-header" class="h5 card-title d-inline">Navigation</h3>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch" role="treeitem" aria-expanded="true" aria-owns="random67c16b604fd693_group" data-collapsible="false" aria-labelledby="random67c16b604fd692_label_1_1"><p class="tree_item branch navigation_node"><a tabindex="-1" id="random67c16b604fd692_label_1_1" href="https://im2ag-moodle.univ-grenoble-alpes.fr/">Accueil</a></p><ul id="random67c16b604fd693_group" role="group"><li class="type_course depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67c16b604fd695_group" aria-labelledby="random67c16b604fd694_label_2_2"><p class="tree_item branch"><span tabindex="-1" id="random67c16b604fd694_label_2_2" title="Plateforme Moodle de l&#039;UFR-IM²AG">Pages du site</span></p><ul id="random67c16b604fd695_group" role="group" aria-hidden="true"><li class="type_custom depth_3 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd696_label_3_4"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd696_label_3_4" href="https://im2ag-moodle.univ-grenoble-alpes.fr/my/courses.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Mes cours</span></a></p></li><li class="type_setting depth_3 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd696_label_3_5"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd696_label_3_5" href="https://im2ag-moodle.univ-grenoble-alpes.fr/tag/search.php"><i class="icon fa fa-square fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Tags</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd696_label_3_6"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd696_label_3_6" title="Page" href="https://im2ag-moodle.univ-grenoble-alpes.fr/mod/page/view.php?id=1303"><img class="icon navicon" alt="Page" title="Page" src="https://im2ag-moodle.univ-grenoble-alpes.fr/theme/image.php/classic/page/1730709409/monologo" /><span class="item-content-wrap">Présentation de MOODLE</span></a></p></li><li class="type_activity depth_3 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd696_label_3_7"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd696_label_3_7" title="Forum" href="https://im2ag-moodle.univ-grenoble-alpes.fr/mod/forum/view.php?id=21066"><img class="icon navicon" alt="Forum" title="Forum" src="https://im2ag-moodle.univ-grenoble-alpes.fr/theme/image.php/classic/forum/1730709409/monologo" /><span class="item-content-wrap">Annonces du site</span></a></p></li></ul></li><li class="type_system depth_2 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd694_label_2_8"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd694_label_2_8" href="https://im2ag-moodle.univ-grenoble-alpes.fr/my/courses.php"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Mes cours</span></a></p></li><li class="type_system depth_2 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67c16b604fd6912_group" aria-labelledby="random67c16b604fd694_label_2_9"><p class="tree_item branch canexpand"><a tabindex="-1" id="random67c16b604fd694_label_2_9" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/index.php">Cours</a></p><ul id="random67c16b604fd6912_group" role="group" aria-hidden="true"><li class="type_category depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_61" data-node-key="61" data-node-type="10" aria-labelledby="random67c16b604fd6913_label_3_10"><p class="tree_item branch" id="expandable_branch_10_61"><span tabindex="-1" id="random67c16b604fd6913_label_3_10">Forum Entreprises</span></p></li><li class="type_category depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_54" data-node-key="54" data-node-type="10" aria-labelledby="random67c16b604fd6913_label_3_11"><p class="tree_item branch" id="expandable_branch_10_54"><span tabindex="-1" id="random67c16b604fd6913_label_3_11">Entités extérieures</span></p></li><li class="type_category depth_3 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67c16b604fd6914_group" aria-labelledby="random67c16b604fd6913_label_3_12"><p class="tree_item branch canexpand"><span tabindex="-1" id="random67c16b604fd6913_label_3_12">UGA</span></p><ul id="random67c16b604fd6914_group" role="group" aria-hidden="true"><li class="type_category depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_16" data-node-key="16" data-node-type="10" aria-labelledby="random67c16b604fd6915_label_4_13"><p class="tree_item branch" id="expandable_branch_10_16"><span tabindex="-1" id="random67c16b604fd6915_label_4_13">UFRIM²AG</span></p></li><li class="type_category depth_4 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67c16b604fd6916_group" aria-labelledby="random67c16b604fd6915_label_4_14"><p class="tree_item branch canexpand"><span tabindex="-1" id="random67c16b604fd6915_label_4_14">Polytech' </span></p><ul id="random67c16b604fd6916_group" role="group" aria-hidden="true"><li class="type_category depth_5 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_50" data-node-key="50" data-node-type="10" aria-labelledby="random67c16b604fd6917_label_5_15"><p class="tree_item branch" id="expandable_branch_10_50"><span tabindex="-1" id="random67c16b604fd6917_label_5_15">TIS</span></p></li><li class="type_category depth_5 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67c16b604fd6918_group" aria-labelledby="random67c16b604fd6917_label_5_16"><p class="tree_item branch canexpand"><span tabindex="-1" id="random67c16b604fd6917_label_5_16">INFO</span></p><ul id="random67c16b604fd6918_group" role="group" aria-hidden="true"><li class="type_category depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_21" data-node-key="21" data-node-type="10" aria-labelledby="random67c16b604fd6919_label_6_17"><p class="tree_item branch" id="expandable_branch_10_21"><span tabindex="-1" id="random67c16b604fd6919_label_6_17">INFO3</span></p></li><li class="type_category depth_6 contains_branch" role="treeitem" aria-expanded="false" aria-owns="random67c16b604fd6920_group" aria-labelledby="random67c16b604fd6919_label_6_18"><p class="tree_item branch"><span tabindex="-1" id="random67c16b604fd6919_label_6_18">INFO4</span></p><ul id="random67c16b604fd6920_group" role="group" aria-hidden="true"><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_19"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_19" title="Bases de Données" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=541"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">BDINFO4</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_20"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_20" title="Algorithmique et Programmation Distribuées" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=529"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">APD</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_21"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_21" title="Interconnexion des réseaux" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=527"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">TP-IR</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_22"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_22" title="Ingénierie de l&#039;Interaction Homme-Machine" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=347"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">IIHM</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_23"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_23" title="Traitement Numérique du Signal" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=334"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">TNS</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_24"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_24" title="Architecture des Systèmes (Nanvix)" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=332"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">AS</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_25"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_25" title="Technologies des réseaux" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=255"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">TP-TR</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_26"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_26" title="Accès et recherche d&#039;informations" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=198"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">MRI</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_27"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_27" title="Recherche Opérationnelle" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=187"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">RO</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_28"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_28" title="Architecture des systèmes" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=137"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">AAS</span></a></p></li><li class="type_course depth_7 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6921_label_7_29"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6921_label_7_29" title="Stage INFO4" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=100"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Stage INFO4</span></a></p></li></ul></li><li class="type_category depth_6 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_23" data-node-key="23" data-node-type="10" aria-labelledby="random67c16b604fd6919_label_6_30"><p class="tree_item branch" id="expandable_branch_10_23"><span tabindex="-1" id="random67c16b604fd6919_label_6_30">INFO5</span></p></li></ul></li></ul></li><li class="type_category depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_28" data-node-key="28" data-node-type="10" aria-labelledby="random67c16b604fd6915_label_4_31"><p class="tree_item branch" id="expandable_branch_10_28"><span tabindex="-1" id="random67c16b604fd6915_label_4_31">Antenne Valence</span></p></li><li class="type_category depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_39" data-node-key="39" data-node-type="10" aria-labelledby="random67c16b604fd6915_label_4_32"><p class="tree_item branch" id="expandable_branch_10_39"><span tabindex="-1" id="random67c16b604fd6915_label_4_32">L.S.T</span></p></li><li class="type_category depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_55" data-node-key="55" data-node-type="10" aria-labelledby="random67c16b604fd6915_label_4_33"><p class="tree_item branch" id="expandable_branch_10_55"><span tabindex="-1" id="random67c16b604fd6915_label_4_33">IUT1</span></p></li><li class="type_category depth_4 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_57" data-node-key="57" data-node-type="10" aria-labelledby="random67c16b604fd6915_label_4_34"><p class="tree_item branch" id="expandable_branch_10_57"><span tabindex="-1" id="random67c16b604fd6915_label_4_34">Cellule TICE</span></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_35"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_35" title="Cours ED Intro Tests multiples" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=693"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">ED - Tests Multiples</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_36"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_36" title="Hyperbolic Spaces : Geometry and Discrete Groups" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=501"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">HS GDG</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_37"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_37" title="Polynômes, espaces vectoriels normés" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=500"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">mat351</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_38"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_38" title="Dev composant logiciel crypto ICP/SCLAM" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=494"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Dev</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_39"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_39" title="Modélisation Probas-Stats Agrégation de Mathématiques" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=492"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Agreg PS</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_40"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_40" title="Introduction à la programmation" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=457"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">Programmation</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_41"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_41" title="STA301 Méthodes statistiques pour la biologie" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=448"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">STA301</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_42"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_42" title="English L3 Maths -Info" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=430"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">ENGL3MI</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_43"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_43" title="English L3 MIAGE" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=429"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">ENGL3MIAGE</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_44"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_44" title="Algorithmique et Programmation Python" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=405"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">INF131</span></a></p></li><li class="type_course depth_4 item_with_icon" role="treeitem" aria-labelledby="random67c16b604fd6915_label_4_45"><p class="tree_item hasicon"><a tabindex="-1" id="random67c16b604fd6915_label_4_45" title="Probabilités et Statistique M1-MEEF" href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=400"><i class="icon fa fa-graduation-cap fa-fw navicon" aria-hidden="true"  ></i><span class="item-content-wrap">M1-MEEF_PS</span></a></p></li></ul></li><li class="type_category depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_1" data-node-key="1" data-node-type="10" aria-labelledby="random67c16b604fd6913_label_3_46"><p class="tree_item branch" id="expandable_branch_10_1"><span tabindex="-1" id="random67c16b604fd6913_label_3_46">Divers et test</span></p></li><li class="type_category depth_3 contains_branch" role="treeitem" aria-expanded="false" data-requires-ajax="true" data-loaded="false" data-node-id="expandable_branch_10_43" data-node-key="43" data-node-type="10" aria-labelledby="random67c16b604fd6913_label_3_47"><p class="tree_item branch" id="expandable_branch_10_43"><span tabindex="-1" id="random67c16b604fd6913_label_3_47">INP</span></p></li></ul></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span></aside>
+                </section>
+            </div>
+
+            <div class="columnright blockcolumn ">
+                <section data-region="blocks-column" class="d-print-none" aria-label="Blocs">
+                    <aside id="block-region-side-post" class="block-region" data-blockregion="side-post" data-droptarget="1"><h2 class="sr-only">Blocs</h2></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="page-footer" class="footer-dark bg-dark text-light">
+        <div class="container footer-dark-inner">
+            <div id="course-footer"></div>
+            <div class="pb-3">
+            </div>
+    
+            <div class="logininfo">Vous êtes connecté anonymement (<a href="https://im2ag-moodle.univ-grenoble-alpes.fr/login/index.php">Connexion</a>)</div>
+            <div class="tool_usertours-resettourcontainer"></div>
+            <div class="homelink"><a href="https://im2ag-moodle.univ-grenoble-alpes.fr/course/view.php?id=41">AR</a></div>
+            <nav class="nav navbar-nav d-md-none" aria-label="Menu personnalisé">
+                    <ul class="list-unstyled pt-3">
+                                        <li><a href="#" title="Langue">Français ‎(fr)‎</a></li>
+                                    <li>
+                                        <ul class="list-unstyled ms-3">
+                                                            <li><a href="https://im2ag-moodle.univ-grenoble-alpes.fr/enrol/index.php?id=41&amp;lang=en" title="Langue">English ‎(en)‎</a></li>
+                                                            <li><a href="https://im2ag-moodle.univ-grenoble-alpes.fr/enrol/index.php?id=41&amp;lang=fr" title="Langue">Français ‎(fr)‎</a></li>
+                                        </ul>
+                                    </li>
+                    </ul>
+            </nav>
+            <div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2024100700.03&amp;lang=fr&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile&amp;siteurl=https%3A%2F%2Fim2ag-moodle.univ-grenoble-alpes.fr">Obtenir l’app mobile</a></div>
+            
+            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://im2ag-moodle.univ-grenoble-alpes.fr/lib/requirejs.php/1730709409/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://im2ag-moodle.univ-grenoble-alpes.fr/lib/javascript.php/1730709409/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://im2ag-moodle.univ-grenoble-alpes.fr/lib/javascript.php/1730709409/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://im2ag-moodle.univ-grenoble-alpes.fr/lib/javascript.php/1730709409/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://im2ag-moodle.univ-grenoble-alpes.fr/lib/javascript.php/1730709409/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"fr"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('fr');
+});;
+M.util.js_pending('core_form/changechecker'); require(['core_form/changechecker'], function(amd) {amd.watchFormById("mform1_65ZlT6fllY3HJd0"); M.util.js_complete('core_form/changechecker');});;
+
+require(['theme_boost/form-display-errors'], function(module) {
+    module.enhance("id_info");
+});
+;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("1953", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('block_navigation/navblock'); require(['block_navigation/navblock'], function(amd) {amd.init("1952"); M.util.js_complete('block_navigation/navblock');});;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select67c16b604fd6946', [CustomEvents.events.accessibleChange]);
+    $('#single_select67c16b604fd6946').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f67c16b604fd6945').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select67c16b604fd6949', [CustomEvents.events.accessibleChange]);
+    $('#single_select67c16b604fd6949').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f67c16b604fd6948').submit();
+        }
+    });
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(295, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1474281545); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?delayStartupUntil=configured"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Modifi\u00e9 le","name":"Nom","error":"Erreur","info":"Information","yes":"Oui","no":"Non","viewallcourses":"Afficher tous les cours","cancel":"Annuler","confirm":"Confirmer","areyousure":"Voulez-vous vraiment continuer\u00a0?","closebuttontitle":"Fermer","unknownerror":"Erreur inconnue","file":"Fichier","url":"URL","collapseall":"Tout replier","expandall":"Tout d\u00e9plier"},"repository":{"type":"Type","size":"Taille","invalidjson":"Cha\u00eene JSON non valide","nofilesattached":"Aucun fichier joint","filepicker":"S\u00e9lecteur de fichiers","logout":"D\u00e9connexion","nofilesavailable":"Aucun fichier disponible","norepositoriesavailable":"D\u00e9sol\u00e9, aucun de vos d\u00e9p\u00f4ts actuels ne peut retourner de fichiers dans le format requis.","fileexistsdialogheader":"Le fichier existe","fileexistsdialog_editor":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint au texte que vous modifiez.","fileexistsdialog_filemanager":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint","renameto":"Renommer \u00e0 \u00ab\u00a0{$a}\u00a0\u00bb","referencesexist":"Il y a {$a} liens qui pointent vers ce fichier","select":"S\u00e9lectionnez"},"admin":{"confirmdeletecomments":"Voulez-vous vraiment supprimer les commentaires s\u00e9lectionn\u00e9s\u00a0?","confirmation":"Confirmation"},"debug":{"debuginfo":"Info de d\u00e9bogage","line":"Ligne","stacktrace":"Trace de la pile"},"langconfig":{"labelsep":"&nbsp;"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-form-shortforms",function() {M.form.shortforms({"formid":"mform1_65ZlT6fllY3HJd0"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random67c16b604fd6950'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67c16b604fd6950'); });
+})();
+//]]>
+</script>
+
+        </div>
+    </footer>
+</div>
+
+
+</body></html>
