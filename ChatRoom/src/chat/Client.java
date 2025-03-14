@@ -12,19 +12,14 @@ public class Client {
             Registry registry = LocateRegistry.getRegistry("localhost", 9999);
             System.out.print("Chatroom name :");
             chatRoomName = System.console().readLine();
-            try {
-                IChatRoomManager stub = (IChatRoomManager) registry.lookup("ChatRoomManager");
-                IChatRoom chatRoom = stub.getChatRoom(chatRoomName);               
+            IChatRoomManager stub = (IChatRoomManager) registry.lookup("ChatRoomManager");
+            IChatRoom chatRoom = stub.getChatRoom(chatRoomName);
 
-                Participant p = new Participant("jojo", chatRoom);
-                chatRoom.connect(p);
-                while (true) {
-                    String msg = System.console().readLine();
-                    p.send(msg);
-                }
-            } catch (Exception e) {
-                System.out.println("Création d'une nouvelle Chatroom");
-
+            Participant p = new Participant("jojo", chatRoom);
+            chatRoom.connect(p);
+            while (true) {
+                String msg = System.console().readLine();
+                p.send(msg);
             }
 
         } catch (Exception e) {
