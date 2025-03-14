@@ -2,8 +2,9 @@ package chat;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
 
-public class ChatRoomManager implements IChatRoomManager {
+public class ChatRoomManager extends UnicastRemoteObject implements IChatRoomManager {
 
     Registry r;
 

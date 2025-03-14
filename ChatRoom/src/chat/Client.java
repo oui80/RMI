@@ -13,12 +13,11 @@ public class Client {
             System.out.print("Chatroom name :");
             chatRoomName = System.console().readLine();
             try {
-                IChatRoom stub = (IChatRoom) registry.lookup(chatRoomName);
+                IChatRoomManager stub = (IChatRoomManager) registry.lookup("ChatRoomManager");
+                IChatRoom chatRoom = stub.getChatRoom(chatRoomName);               
 
-                
-
-                Participant p = new Participant("jojo", stub);
-                stub.connect(p);
+                Participant p = new Participant("jojo", chatRoom);
+                chatRoom.connect(p);
                 while (true) {
                     String msg = System.console().readLine();
                     p.send(msg);
