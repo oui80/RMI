@@ -7,4 +7,8 @@ public interface IParticipant extends Remote {
     String name() throws RemoteException;
 
     void receive(String name, String msg) throws RemoteException;
+
+    String[] who() throws RemoteException;
+
+    void affichePreviousMessage() throws RemoteException;
 }
